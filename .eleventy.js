@@ -1,12 +1,5 @@
 module.exports = function (eleventyConfig) {
-  /**
-   * Why copy the /public directory?
-   * 
-   * Slinkity uses Vite (https://vitejs.dev) under the hood for processing styles and JS resources
-   * This tool encourages a /public directory for your static assets like social images
-   * To ensure this directory is discoverable by Vite, we copy it to our 11ty build output like so:
-   */
-  eleventyConfig.addPassthroughCopy('public')
+  eleventyConfig.addPassthroughCopy('src/fonts')
 
   return {
     /**
